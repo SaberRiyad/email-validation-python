@@ -4,8 +4,7 @@ k,d=0,0
 if len(email)>=6:
     if email[0].isalpha():
         if ("@" in email) and (email.count("@")==1):
-            if(email[-4]==".")^(email[-3]=="."):#ex-or operator is used...(if two input=true or false output=false)(if one input is true and onother is false,output is false)
-                for i in email:
+            if(email[-4]==".")^(email[-3]=="."):
                     if i==i.isspace():
                         k=1
                     elif i.isalpha():
